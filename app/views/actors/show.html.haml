@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @actor.name
+%p
+  %b Pic:
+  = @actor.pic
+
+= link_to 'Edit', edit_actor_path(@actor)
+\|
+= link_to 'Back', actors_path
